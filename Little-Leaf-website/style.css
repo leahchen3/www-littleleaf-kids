@@ -1,0 +1,330 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  color: #5e6282;
+  overflow-x: hidden;
+}
+
+#page {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  margin-bottom: 9.6rem;
+}
+
+/* Grid  */
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8rem;
+}
+
+.grid-2-cols-center {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8rem;
+  align-items: center;
+}
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8rem;
+}
+
+.grid-4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8rem;
+  text-align: center;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+.logo {
+  height: 6rem;
+}
+
+.main-nav {
+  text-decoration: none;
+  gap: 4.8rem;
+}
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #1e6e53;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  margin-right: 4rem;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #2eb07a;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #029b67;
+}
+.close {
+  display: none;
+}
+.section-margin {
+  margin-bottom: 9.6rem;
+}
+
+/* Font */
+
+h1 {
+  font-family: "Fredoka";
+  text-decoration: none;
+  color: #029b67;
+  font-weight: 600;
+  font-size: 4.4rem;
+}
+
+h2 {
+  font-family: "Fredoka";
+  text-decoration: none;
+  color: #2eb07a;
+  font-weight: 600;
+  font-size: 3.6rem;
+  margin-bottom: 4.8rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.heading-secondary-left {
+  margin-bottom: 1.6rem;
+  text-align: left;
+}
+h3 {
+  font-family: "Prompt";
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #1e1d4c;
+  padding-top: 2rem;
+}
+
+p {
+  font-family: "Prompt";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #5e6282;
+}
+
+.quality-care-paragraph-sub {
+  font-family: "Prompt";
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #5e6282;
+}
+
+.about-us-paragraph {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.contact-paragraph {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.email-link:link,
+.email-link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: left;
+  color: #5e6282;
+  margin-bottom: 2rem;
+}
+
+/* Hero Section */
+.section-hero {
+  background-color: #edf2e5;
+  padding: 4.8rem 0 4.8rem 0;
+  margin-bottom: 9.6rem;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  gap: 8rem;
+  align-items: center;
+}
+
+.hero-paragraph {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 6.4rem;
+  padding-top: 2.4rem;
+}
+
+.img {
+  display: block;
+  width: 100%;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: "Prompt";
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #f3a81f;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #f1a51b;
+}
+
+/* Quality-care Section */
+h2 {
+  font-family: "Fredoka";
+  text-decoration: none;
+  color: #2eb07a;
+  font-weight: 600;
+  font-size: 3.6rem;
+  margin-bottom: 4.8rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.quality-care-paragraph {
+  font-family: "Prompt";
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #1e1d4c;
+  padding-top: 2rem;
+}
+
+.quality-care-paragraph-sub {
+  font-family: "Prompt";
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #5e6282;
+}
+
+/* About Us Section */
+.heading-secondary-left {
+  font-family: "Fredoka";
+  text-decoration: none;
+  color: #2eb07a;
+  font-weight: 600;
+  font-size: 3.6rem;
+  text-align: left;
+}
+
+/* Our Picture Wall Section */
+.img-box {
+  overflow: hidden;
+}
+.img-hover {
+  transition: all 2s;
+}
+
+.img-box:hover .img-hover {
+  transform: scale(1.1);
+}
+
+/* Direction Section  */
+iframe {
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+
+/* Contact Us Now */
+.icon {
+  padding-right: 2rem;
+}
+
+.contact-us-section {
+  background-color: #f6f5ef;
+}
+
+.contact-us-box {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  display: grid;
+  grid-template-columns: 4fr 5fr;
+  gap: 8rem;
+  align-items: center;
+}
+
+/* Footer Section */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16rem;
+}
+
+.footer {
+  color: #555;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
