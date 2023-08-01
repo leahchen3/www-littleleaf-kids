@@ -11,7 +11,6 @@ body {
   font-family: "Prompt", sans-serif;
   font-weight: 400;
   color: #5e6282;
-  overflow-x: hidden;
 }
 
 #page {
@@ -55,7 +54,6 @@ header {
   background-color: #fff;
   height: 9.6rem;
   padding: 0 4.8rem;
-  position: relative;
   position: sticky;
   top: 0;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
@@ -78,7 +76,7 @@ header {
 
 .main-nav-link:link,
 .main-nav-link:visited {
-  color: #1e6e53;
+  color: #5e6282;
   display: inline-block;
   text-decoration: none;
   font-weight: 400;
@@ -89,7 +87,7 @@ header {
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #2eb07a;
+  color: #1e6e53;
 }
 
 .btn-mobile-nav {
