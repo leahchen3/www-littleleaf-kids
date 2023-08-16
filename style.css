@@ -275,18 +275,6 @@ h2 {
   text-align: left;
 }
 
-/* Our Picture Wall Section */
-.img-box {
-  overflow: hidden;
-}
-.img-hover {
-  transition: all 2s;
-}
-
-.img-box:hover .img-hover {
-  transform: scale(1.1);
-}
-
 /* Direction Section  */
 iframe {
   width: 100%;
