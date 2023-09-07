@@ -2,13 +2,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-padding-top: 12.8rem;
 }
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+
 body {
-  font-family: "Prompt", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   color: #5e6282;
 }
@@ -33,15 +36,10 @@ body {
   grid-gap: 8rem;
   align-items: center;
 }
+
 .grid-3-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 8rem;
-}
-
-.grid-4-cols {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-gap: 8rem;
   text-align: center;
 }
@@ -58,6 +56,7 @@ header {
   top: 0;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
+
 .logo {
   height: 4rem;
 }
@@ -76,10 +75,10 @@ header {
 
 .main-nav-link:link,
 .main-nav-link:visited {
-  color: #5e6282;
+  color: #006c50;
   display: inline-block;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
   margin-right: 4rem;
@@ -87,7 +86,7 @@ header {
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #1e6e53;
+  color: #a8acff;
 }
 
 .btn-mobile-nav {
@@ -102,61 +101,48 @@ header {
   width: 4.8rem;
   color: #029b67;
 }
-.close {
-  display: none;
-}
+
 .section-margin {
-  margin-bottom: 9.6rem;
+  margin-bottom: 15.2rem;
 }
 
 /* Font */
 
 h1 {
-  font-family: "Fredoka";
+  font-family: "Volkhov";
+  text-transform: capitalize;
   text-decoration: none;
-  color: #029b67;
-  font-weight: 600;
+  color: #03a678;
+  font-weight: 900;
   font-size: 4.4rem;
 }
 
-h2 {
-  font-family: "Fredoka";
-  text-decoration: none;
-  color: #2eb07a;
-  font-weight: 600;
-  font-size: 3.6rem;
-  margin-bottom: 4.8rem;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.heading-secondary-left {
-  margin-bottom: 1.6rem;
-  text-align: left;
-}
 h3 {
-  font-family: "Prompt";
-  font-weight: 400;
-  font-size: 1.8rem;
-  color: #1e1d4c;
-  padding-top: 2rem;
+  font-family: "Volkhov";
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: #fff;
+  padding-top: 2.4rem;
+  padding-bottom: 2rem;
 }
 
 p {
-  font-family: "Prompt";
+  font-family: "DM Sans";
   font-weight: 400;
   font-size: 1.6rem;
   color: #5e6282;
 }
 
 .quality-care-paragraph-sub {
-  font-family: "Prompt";
   font-weight: 300;
-  font-size: 1.6rem;
-  color: #5e6282;
+  font-size: 1.8rem;
+  color: #fff;
+  padding-top: 1rem;
 }
 
 .about-us-paragraph {
+  color: #494b48;
+  letter-spacing: 0.1rem;
   font-size: 1.8rem;
   line-height: 1.6;
   font-weight: 400;
@@ -165,6 +151,7 @@ p {
 }
 
 .contact-paragraph {
+  color: #494b48;
   font-size: 1.8rem;
   line-height: 1.6;
   font-weight: 400;
@@ -185,22 +172,24 @@ p {
 
 /* Hero Section */
 .section-hero {
-  background-color: #edf2e5;
-  padding: 4.8rem 0 4.8rem 0;
+  background-color: #fcf9f4;
+  padding: 6.4rem 0 6.4rem 0;
   margin-bottom: 9.6rem;
 }
 
 .hero {
   max-width: 130rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 4fr 6fr;
-  gap: 8rem;
+  gap: 4rem;
   align-items: center;
 }
 
 .hero-paragraph {
+  font-family: "DM Sans";
+  color: #494b48;
+  font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.6;
   margin-bottom: 6.4rem;
@@ -208,7 +197,11 @@ p {
 }
 
 .img {
-  display: block;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.img-without-border {
   width: 100%;
 }
 
@@ -217,61 +210,65 @@ p {
 .btn:visited {
   display: inline-block;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
+  padding: 1.4rem 2.4rem;
+  border-radius: 100rem;
   border: none;
   cursor: pointer;
-  font-family: "Prompt";
-  transition: all 0.3s;
 }
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #f3a81f;
+  background-color: #a8acff;
   color: #fff;
-}
-
-.btn--full:hover,
-.btn--full:active {
-  background-color: #f1a51b;
 }
 
 /* Quality-care Section */
 h2 {
-  font-family: "Fredoka";
+  font-family: "Volkhov";
   text-decoration: none;
-  color: #2eb07a;
+  color: #03a678;
   font-weight: 600;
-  font-size: 3.6rem;
-  margin-bottom: 4.8rem;
+  font-size: 3rem;
+  margin-bottom: 6.4rem;
   text-align: center;
   text-transform: capitalize;
 }
 
-.quality-care-paragraph {
-  font-family: "Prompt";
-  font-weight: 400;
-  font-size: 1.8rem;
-  color: #1e1d4c;
-  padding-top: 2rem;
+.light-purple-text {
+  color: #a8acff;
 }
 
-.quality-care-paragraph-sub {
-  font-family: "Prompt";
-  font-weight: 300;
-  font-size: 1.6rem;
-  color: #5e6282;
+.bright-yellow-text {
+  color: #fdb419;
+}
+
+.bg-pink {
+  background-color: #eb918e;
+  padding: 5rem;
+  border-radius: 1rem;
+}
+
+.bg-green {
+  background-color: #1cad88;
+  padding: 5rem;
+  border-radius: 1rem;
+}
+
+.bg-blue {
+  background-color: #32c0ce;
+  padding: 5rem;
+  border-radius: 1rem;
 }
 
 /* About Us Section */
 .heading-secondary-left {
-  font-family: "Fredoka";
-  text-decoration: none;
-  color: #2eb07a;
   font-weight: 600;
-  font-size: 3.6rem;
+  font-size: 3rem;
+  margin-bottom: 2.4rem;
+  text-align: center;
+  text-transform: capitalize;
   text-align: left;
 }
 
