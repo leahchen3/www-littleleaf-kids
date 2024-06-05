@@ -327,7 +327,7 @@ h2 {
 .picture-wall {
   display: flex;
   gap: 1.6rem;
-  animation: scroll 20s linear infinite;
+  animation: scroll 60s linear infinite;
 }
 
 .picture-item {
