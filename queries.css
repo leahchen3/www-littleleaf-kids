@@ -75,10 +75,6 @@
     padding: 4rem;
   }
 
-  .contact-paragraph {
-    text-align: center;
-  }
-
   .icon {
     padding-right: 1rem;
   }
@@ -118,6 +114,10 @@
     padding-top: 0rem;
   }
 
+  .fun-rocks-img {
+    margin-bottom: -2rem;
+  }
+
   .footer {
     font-size: 1.4rem;
   }
@@ -132,6 +132,10 @@
   header {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .logo-letter {
+    height: 2.2rem;
   }
 
   h1 {
