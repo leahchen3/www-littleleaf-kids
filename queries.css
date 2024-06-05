@@ -3,12 +3,9 @@
   .contact-us-box {
     max-width: 130rem;
     margin: 0 auto;
-    padding-left: 3.2rem;
-    padding-right: 3.2rem;
-    display: grid;
-    grid-template-columns: 4fr 5fr;
-    gap: 8rem;
-    align-items: center;
+    padding-left: 8rem;
+    padding-right: 38.4rem;
+    text-align: left;
   }
 
   header {
@@ -42,6 +39,9 @@
     font-size: 56.25%;
   }
 
+  .logo-letter {
+    padding-left: 1.6rem;
+  }
   .hero {
     display: flex;
     flex-direction: column;
@@ -104,14 +104,7 @@
   header {
     position: relative;
   }
-  .grid-3-cols {
-    grid-template-columns: 1fr;
-  }
 
-  .main-nav-link:link,
-  .main-nav-link:visited {
-    margin-right: 2rem;
-  }
   .hero-paragraph {
     padding-right: 0;
     padding-left: 0;
@@ -120,6 +113,9 @@
   .img-small {
     max-width: 100%;
     margin: auto;
+  }
+  .fun-rocks-section {
+    padding-top: 0rem;
   }
 
   .footer {

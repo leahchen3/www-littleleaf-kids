@@ -24,3 +24,18 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const pictureWall = document.querySelector(".picture-wall");
+  const pictureItems = Array.from(pictureWall.children);
+  const numberOfClones = pictureItems.length;
+
+  // Clone the pictures to make the loop seamless
+  pictureItems.forEach((item) => {
+    const clone = item.cloneNode(true);
+    pictureWall.appendChild(clone);
+  });
+
+  // Duplicate the animation duration based on the total width of the items
+  pictureWall.style.animationDuration = `${numberOfClones * 10}s`; // Adjust speed as needed
+});
